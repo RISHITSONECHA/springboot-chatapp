@@ -9,7 +9,7 @@
 <!--		<relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
 <!--	</parent>-->
 	<groupId>com.chatapp</groupId>
-	<artifactId>usermanagement</artifactId>
+	<artifactId>userandauthservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>User Management</name>
 	<description>Demo project for Spring Boot</description>
