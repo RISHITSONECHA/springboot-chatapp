@@ -12,9 +12,13 @@ on:
   push:
     branches: [ "*" ]
     paths:
-      - '**'
+      - 'userandauthservice/**'
+      - '.github/workflows/**'
   pull_request:
     branches: [ "*" ]
+    paths:
+      - 'userandauthservice/**'
+      - '.github/workflows/**'
 
 jobs:
   build:
@@ -50,7 +54,7 @@ jobs:
           args:
             # Unique keys of your project and organization. You can find them in SonarCloud > Information (bottom-left menu)
             # mandatory
-            -Dsonar.projectKey=RISHITSONECHA_springboot-chatapp
+            -Dsonar.projectKey=springbootchatapp_springboot-chatapp
             -Dsonar.organization=springbootchatapp
             # Comma-separated paths to directories containing main source files.
             #-Dsonar.sources= # optional, default is project base directory
