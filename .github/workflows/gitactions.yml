@@ -11,6 +11,8 @@ name: cicd pipeline
 on:
   push:
     branches: [ "*" ]
+    paths:
+      - 'userandauthservice/**'
   pull_request:
     branches: [ "*" ]
 
