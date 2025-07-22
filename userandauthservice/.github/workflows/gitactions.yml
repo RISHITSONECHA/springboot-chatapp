@@ -39,7 +39,7 @@ jobs:
       - name: Analyze with SonarCloud
         uses: SonarSource/sonarcloud-github-action@v2
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.USER_AUTH_SONAR_TOKEN }}
         with:
           projectBaseDir: userandauthservice
           args: >
