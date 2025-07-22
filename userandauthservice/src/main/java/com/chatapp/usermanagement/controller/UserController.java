@@ -40,11 +40,9 @@ public class UserController {
             final HttpServletRequest httpServletRequest) throws SQLException, IOException {
 
         // Parse JSON data
-//        ObjectMapper objectMapper = new ObjectMapper();
         UserProfileRequest userProfileRequest = objectMapper.readValue(jsonData, UserProfileRequest.class);
 
         // Set avatar if provided
-        System.out.println("Avatar file: " + (avatar != null ? avatar.getOriginalFilename() : "No avatar uploaded"));
         if (avatar != null && userProfileRequest.getData() != null) {
             userProfileRequest.getData().setAvatar(avatar.getBytes());
         }
