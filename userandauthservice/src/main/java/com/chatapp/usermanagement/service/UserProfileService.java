@@ -46,7 +46,7 @@ public class UserProfileService {
                     }
                 })
                 .collect(Collectors.toList());
-        System.out.println("UserProfileResponses: " + userProfileResponses.size());
+
         return userProfileResponses;
     }
 
