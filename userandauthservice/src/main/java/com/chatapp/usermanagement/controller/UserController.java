@@ -57,7 +57,7 @@ public class UserController {
                 @RequestHeader(value = "X-Correlation-ID", required = true)  String correlationId,
                 final HttpServletRequest httpServletRequest) throws SQLException {
             List<UserProfileResponse> userProfilesList;
-            System.out.println("IN GET ");
+
             userProfilesList = userProfileService.getAllUses();
             if (userProfilesList.isEmpty()) {
                 return ResponseMapper.getResponseEntity(httpServletRequest, userProfilesList, ErrorType.NO_DATA_FOUND);
