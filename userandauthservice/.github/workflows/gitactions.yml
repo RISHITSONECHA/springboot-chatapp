@@ -11,9 +11,15 @@ name: cicd pipeline
 on:
   push:
     branches: [ "*" ]
-
+    paths:
+      - 'userandauthservice/**'
+      - '.github/workflows/**'
   pull_request:
     branches: [ "*" ]
+    paths:
+      - 'userandauthservice/**'
+      - '.github/workflows/**'
+
 
 
 
