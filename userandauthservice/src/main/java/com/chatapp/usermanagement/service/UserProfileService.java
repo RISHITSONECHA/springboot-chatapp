@@ -68,7 +68,7 @@ public class UserProfileService {
         Optional<UserProfile> userProfile = userProfileRepository.findById(userId);
 
         if(userProfile.isEmpty()) {
-            System.out.println("User profile not found for userId: " + userId);
+
             throw new UserManagementException(ErrorType.USER_NOT_FOUND, "User profile not found for userId: " + userId);
         }
         UserProfile existingProfile = userProfile.get();
